@@ -135,7 +135,7 @@ const IndexPage = () => {
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
         <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
+          🎉🎉
         </span>
       </h1>
       <p style={paragraphStyles}>
