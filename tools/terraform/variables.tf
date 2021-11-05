@@ -1,5 +1,5 @@
 variable "www_domain_name" {
-  default = "www.nikiti.uk"
+  default = "pavel.nikiti.uk"
 }
 
 variable "root_domain_name" {
