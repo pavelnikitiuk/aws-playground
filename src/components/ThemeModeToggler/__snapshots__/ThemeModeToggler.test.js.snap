@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the ThemeModeToggler component when it is rendered should match the snapshot 1`] = `
+Array [
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-198bfjk{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;white-space:nowrap;vertical-align:middle;outline:2px solid transparent;outline-offset:2px;width:auto;padding:0px;}",
+      }
+    }
+    data-emotion="css 198bfjk"
+  />,
+  <button
+    aria-label="Toggle theme mode"
+    className="chakra-button css-198bfjk"
+    type="button"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": ".css-onkibi{width:1em;height:1em;display:inline-block;line-height:1em;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:currentColor;vertical-align:middle;}",
+        }
+      }
+      data-emotion="css onkibi"
+    />
+    <svg
+      aria-hidden={true}
+      className="chakra-icon css-onkibi"
+      focusable={false}
+      viewBox="0 0 24 24"
+    >
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="5"
+        />
+        <path
+          d="M12 1v2"
+        />
+        <path
+          d="M12 21v2"
+        />
+        <path
+          d="M4.22 4.22l1.42 1.42"
+        />
+        <path
+          d="M18.36 18.36l1.42 1.42"
+        />
+        <path
+          d="M1 12h2"
+        />
+        <path
+          d="M21 12h2"
+        />
+        <path
+          d="M4.22 19.78l1.42-1.42"
+        />
+        <path
+          d="M18.36 5.64l1.42-1.42"
+        />
+      </g>
+    </svg>
+  </button>,
+]
+`;

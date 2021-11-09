@@ -1,6 +1,9 @@
 node_modules/
 .cache/
-public
+public/**/*
 *.tfstate
 .terraform
 .terraform.lock.hcl
+.env
+coverage
+!public/favicon.png

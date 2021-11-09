@@ -31,6 +31,5 @@ resource "aws_s3_bucket_object" "object" {
   bucket       = aws_s3_bucket.frontend.id
   key          = each.value
   source       = "../../public/${each.value}"
-  etag         = filemd5("../../public/${each.value}")
   content_type = lookup(local.mime_types, regex("\\.[^.]+$", each.value), null)
 }

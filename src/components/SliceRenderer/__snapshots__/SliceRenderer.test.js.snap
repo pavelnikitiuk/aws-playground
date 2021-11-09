@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the SliceRenderer component when it is rendered should match the snapshot 1`] = `
+Array [
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-1r2f04i{margin-bottom:10px;}",
+      }
+    }
+    data-emotion="css 1r2f04i"
+  />,
+  <section
+    className="css-1r2f04i"
+  >
+    it is test a
+  </section>,
+]
+`;
