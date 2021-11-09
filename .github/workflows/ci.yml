@@ -22,12 +22,12 @@ jobs:
           npm ci
       
       - name: Lint
-       run: |
-         npm run lint
+        run: |
+          npm run lint
       
-      -name: Test
-       run: |
-         npm run test:ci
+      - name: Test
+        run: |
+          npm run test:ci
 
   build and deploy:
     runs-on: ubuntu-latest
