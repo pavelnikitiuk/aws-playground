@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the RichText component when it is rendered should match the snapshot 1`] = `
+Array [
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-6dvxm2{font-size:xl;}",
+      }
+    }
+    data-emotion="css 6dvxm2"
+  />,
+  <p
+    className="chakra-text css-6dvxm2"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": ".css-1856l8r{color:teal.500;}",
+        }
+      }
+      data-emotion="css 1856l8r"
+    />
+    <a
+      className="chakra-link css-1856l8r"
+      href="tel:+123456"
+    >
+      Lorem ipsum dol
+    </a>
+    or sit amet, consectetur adipiscing elit
+  </p>,
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-6dvxm2{font-size:xl;}",
+      }
+    }
+    data-emotion="css 6dvxm2"
+  />,
+  <p
+    className="chakra-text css-6dvxm2"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": ".css-1856l8r{color:teal.500;}",
+        }
+      }
+      data-emotion="css 1856l8r"
+    />
+    <a
+      className="chakra-link css-1856l8r"
+      href="#"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      sed do eiusmod tempor in
+    </a>
+    cididunt ut labore et dolore magna aliqua
+  </p>,
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-r7q7qr{margin-bottom:5px;}",
+      }
+    }
+    data-emotion="css r7q7qr"
+  />,
+  <h1
+    className="chakra-heading css-r7q7qr"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": ".css-1856l8r{color:teal.500;}",
+        }
+      }
+      data-emotion="css 1856l8r"
+    />
+    <a
+      className="chakra-link css-1856l8r"
+      href="#"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Lorem ip
+    </a>
+    sum dolor sit amet, consectetur adipiscing elit
+  </h1>,
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-wlea3r{margin-bottom:2px;}",
+      }
+    }
+    data-emotion="css wlea3r"
+  />,
+  <h3
+    className="chakra-heading css-wlea3r"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": ".css-1856l8r{color:teal.500;}",
+        }
+      }
+      data-emotion="css 1856l8r"
+    />
+    <a
+      className="chakra-link css-1856l8r"
+      href="#"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Lorem 
+    </a>
+    ipsum dolor sit amet, consectetur adipiscing elit
+  </h3>,
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-155za0w{list-style-type:none;}",
+      }
+    }
+    data-emotion="css 155za0w"
+  />,
+  <ul
+    className="css-155za0w"
+    role="list"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": ".css-7gd3gi{margin:2px;}",
+        }
+      }
+      data-emotion="css 7gd3gi"
+    />
+    <li
+      className="css-7gd3gi"
+    >
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": ".css-qld8i7{width:1em;height:1em;display:inline-block;line-height:1em;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:green.500;}",
+          }
+        }
+        data-emotion="css qld8i7"
+      />
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": ".css-16alosh{width:1em;height:1em;display:inline-block;line-height:1em;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:currentColor;vertical-align:middle;width:1em;height:1em;display:inline-block;line-height:1em;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:green.500;}",
+          }
+        }
+        data-emotion="css 16alosh"
+      />
+      <svg
+        className="chakra-icon chakra-icon css-16alosh"
+        focusable={false}
+        role="presentation"
+        viewBox="0 0 14 14"
+      >
+        <path
+          d="M14,7.77 L14,6.17 L12.06,5.53 L11.61,4.44 L12.49,2.6 L11.36,1.47 L9.55,2.38 L8.46,1.93 L7.77,0.01 L6.17,0.01 L5.54,1.95 L4.43,2.4 L2.59,1.52 L1.46,2.65 L2.37,4.46 L1.92,5.55 L0,6.23 L0,7.82 L1.94,8.46 L2.39,9.55 L1.51,11.39 L2.64,12.52 L4.45,11.61 L5.54,12.06 L6.23,13.98 L7.82,13.98 L8.45,12.04 L9.56,11.59 L11.4,12.47 L12.53,11.34 L11.61,9.53 L12.08,8.44 L14,7.75 L14,7.77 Z M7,10 C5.34,10 4,8.66 4,7 C4,5.34 5.34,4 7,4 C8.66,4 10,5.34 10,7 C10,8.66 8.66,10 7,10 Z"
+          fill="currentColor"
+        />
+      </svg>
+      list-item;
+    </li>
+  </ul>,
+]
+`;
