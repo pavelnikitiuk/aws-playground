@@ -42,7 +42,7 @@ jobs:
 
       - name: Build
         run: |
-          npm run build
+          npm run build >> /dev/null
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -55,14 +55,14 @@ jobs:
         uses: hashicorp/setup-terraform@v1
 
       - name: Terraform Init
-        run: terraform -chdir="./tools/terraform" init
+        run: terraform -chdir="./tools/terraform" init >> /dev/null
 
       - name: Terraform Format
-        run: terraform -chdir="./tools/terraform" fmt -check
+        run: terraform -chdir="./tools/terraform" fmt -check >> /dev/null
 
       - name: Terraform Plan
-        run: terraform -chdir="./tools/terraform" plan
+        run: terraform -chdir="./tools/terraform" plan >> /dev/null
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        run: terraform -chdir="./tools/terraform"  apply -auto-approve
+        run: terraform -chdir="./tools/terraform"  apply -auto-approve >> /dev/null
