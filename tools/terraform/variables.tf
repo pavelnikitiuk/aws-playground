@@ -5,3 +5,7 @@ variable "www_domain_name" {
 variable "root_domain_name" {
   default = "nikiti.uk"
 }
+
+variable "public_root" {
+  default = "../../public/"
+}
