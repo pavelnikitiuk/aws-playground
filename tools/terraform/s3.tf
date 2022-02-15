@@ -34,12 +34,3 @@ resource "aws_s3_bucket_object" "object" {
   content_type = lookup(local.mime_types, regex("\\.[^.]+$", each.value), null)
 }
 
-
-# invalidation  
-resource "null_resource" "invalidate_cache" {
-  triggers = local.file_hashes
-
-  provisioner "local-exec" {
-    command = "aws cloudfront create-invalidation --distribution-id=${aws_cloudfront_distribution.www_distribution.id} --paths=/*"
-  }
-}

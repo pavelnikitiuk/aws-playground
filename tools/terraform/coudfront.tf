@@ -46,3 +46,10 @@ resource "aws_cloudfront_distribution" "www_distribution" {
     ssl_support_method  = "sni-only"
   }
 }
+
+# invalidation  
+resource "null_resource" "invalidate_cache" {
+  provisioner "local-exec" {
+    command = "aws cloudfront create-invalidation --distribution-id=${aws_cloudfront_distribution.www_distribution.id} --paths=/*"
+  }
+}
