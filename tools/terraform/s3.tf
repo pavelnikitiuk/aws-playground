@@ -36,5 +36,6 @@ resource "aws_s3_bucket_object" "object" {
   cache_control = "no-cache"
   source        = "../../public/${each.value}"
   content_type  = lookup(local.mime_types, regex("\\.[^.]+$", each.value), null)
+  etag          = filemd5("../../public/${each.value}")
 }
 
