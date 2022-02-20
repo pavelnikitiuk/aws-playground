@@ -1,6 +1,9 @@
 resource "aws_s3_bucket" "frontend" {
   bucket = var.www_domain_name
   acl    = "public-read"
+  versioning {
+    enabled = true
+  }
   policy = <<POLICY
 {
   "Version":"2012-10-17",
@@ -30,6 +33,7 @@ resource "aws_s3_bucket_object" "object" {
   for_each     = fileset("../../public/", "**/*")
   bucket       = aws_s3_bucket.frontend.id
   key          = each.value
+  cache_control = "no-cache"
   source       = "../../public/${each.value}"
   content_type = lookup(local.mime_types, regex("\\.[^.]+$", each.value), null)
 }
