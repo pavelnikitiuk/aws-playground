@@ -30,11 +30,11 @@ POLICY
 }
 
 resource "aws_s3_bucket_object" "object" {
-  for_each     = fileset("../../public/", "**/*")
-  bucket       = aws_s3_bucket.frontend.id
-  key          = each.value
+  for_each      = fileset("../../public/", "**/*")
+  bucket        = aws_s3_bucket.frontend.id
+  key           = each.value
   cache_control = "no-cache"
-  source       = "../../public/${each.value}"
-  content_type = lookup(local.mime_types, regex("\\.[^.]+$", each.value), null)
+  source        = "../../public/${each.value}"
+  content_type  = lookup(local.mime_types, regex("\\.[^.]+$", each.value), null)
 }
 
