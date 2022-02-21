@@ -1,24 +1,9 @@
 resource "aws_s3_bucket" "frontend" {
   bucket = var.www_domain_name
-  acl    = "public-read"
+  acl    = "private"
   versioning {
     enabled = true
   }
-  policy = <<POLICY
-{
-  "Version":"2012-10-17",
-  "Statement":[
-    {
-      "Sid":"AddPerm",
-      "Effect":"Allow",
-      "Principal": "*",
-      "Action":["s3:GetObject"],
-      "Resource":["arn:aws:s3:::${var.www_domain_name}/*"]
-    }
-  ]
-}
-POLICY
-
   website {
     index_document = "index.html"
     error_document = "404.html"
@@ -33,9 +18,16 @@ resource "aws_s3_bucket_object" "object" {
   for_each      = fileset("../../public/", "**/*")
   bucket        = aws_s3_bucket.frontend.id
   key           = each.value
-  cache_control = "no-cache"
+  cache_control = regex("\\.[^.]+$", each.value) == ".html" ? "no-cache" : null
   source        = "../../public/${each.value}"
   content_type  = lookup(local.mime_types, regex("\\.[^.]+$", each.value), null)
   etag          = filemd5("../../public/${each.value}")
 }
 
+
+# invalidation  
+resource "null_resource" "invalidate_cache" {
+  provisioner "local-exec" {
+    command = "aws cloudfront create-invalidation --distribution-id=${aws_cloudfront_distribution.www_distribution.id} --paths=/*"
+  }
+}
