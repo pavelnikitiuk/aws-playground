@@ -20,6 +20,8 @@ module.exports = {
         theme_color: '#fff',
         display: 'standalone',
         icon: './public/favicon.png',
+        lang: 'en',
+        description: 'Pavel Nikitsiuk website',
       },
     },
     {

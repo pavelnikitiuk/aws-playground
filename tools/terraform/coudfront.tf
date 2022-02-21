@@ -34,7 +34,7 @@ resource "aws_cloudfront_distribution" "www_distribution" {
     allowed_methods        = ["GET", "HEAD", "OPTIONS"]
     cached_methods         = ["GET", "HEAD", "OPTIONS"]
     target_origin_id       = var.www_domain_name
-    min_ttl                = 0
+    min_ttl                = 20
     default_ttl            = 3600
     max_ttl                = 86400
 
